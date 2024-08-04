@@ -14,8 +14,8 @@ contract TestNFT is ERC721 {
         _currentTokenId += 1;
         uint256 newItemId = _currentTokenId;
         _mint(recipient, newItemId);
-        
-        emit NFTMinted(recipient, newItemId);  
+
+        emit NFTMinted(recipient, newItemId);
 
         return newItemId;
     }
